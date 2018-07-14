@@ -13,7 +13,7 @@ import org.springframework.jmx.export.annotation.ManagedResource;
 import org.springframework.stereotype.Component;
 
 @Component
-@ManagedResource
+@ManagedResource(objectName = "org.opengravity:name=Processor")
 public class Processor {
 
   private final Logger log = LoggerFactory.getLogger(Processor.class);
